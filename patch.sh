@@ -31,7 +31,7 @@ elif [ "$1" = "choice" ];then
 	exit
 elif [ "$1" = "chkdir" ];then
 	echo -e "\033[34m\nSearching for target patch file \"BuildServer.jar\" ......\n正在寻找目标修补文件“BuildServer.jar”......\033[0m"
-	for setpath in "./BuildServer/BuildServer.jar" "./buildserver/buildserver.jar" "./BuildServer/buildserver.jar" "./buildserver/BuildServer.jar" "$StDiR/buildserver.jar" "./BuildServer.jar" none
+	for setpath in "./BuildServer/BuildServer.jar" "./buildserver/buildserver.jar" "./BuildServer/buildserver.jar" "./buildserver/BuildServer.jar" "./buildserver.jar" "./BuildServer.jar" none
 	do
 		if [ $setpath = "none" ];then
 			echo -e "Cannot find \"BuildServer.jar\",please input the full path. (support ./ & ../)\n无法找到“BuildServer.jar”文件，请手动输入完整路径。（支持 ./ 和 ../）"
